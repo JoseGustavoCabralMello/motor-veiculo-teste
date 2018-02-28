@@ -4,7 +4,9 @@ public abstract class Veiculo {
     private String placa;
     private String marca;
     private String modelo;
-    private double velocMax;
+    private String cor;
+    private int qtdRodas;
+    private int velocMax;
     private Motor motor = new Motor();
     
     public Veiculo(){
@@ -26,7 +28,15 @@ public abstract class Veiculo {
         this.modelo = modelo;
     }
     
-    public void setVelocMax(double velocMax){
+    public void setCor(String cor){
+        this.cor = cor;
+    }
+    
+    public void setqtdRodas(int qtdRodas){
+        this.qtdRodas = qtdRodas;
+    }
+    
+    public void setVelocMax(int velocMax){
         this.velocMax = velocMax;
     }
     
@@ -46,12 +56,24 @@ public abstract class Veiculo {
         return modelo;
     }
     
-    public double getVelocMax(){
+    public String getCor(){
+        return cor;
+    }
+    
+    public int getQtdRodas(){
+        return qtdRodas;
+    }
+    
+    public int getVelocMax(){
         return velocMax;
     }
     
     public Motor getMotor(){
         return motor;
+    }
+    
+    public void calcVel(){
+        
     }
     
 }

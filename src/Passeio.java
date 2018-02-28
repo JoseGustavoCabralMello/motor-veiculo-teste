@@ -1,6 +1,6 @@
 // José Gustavo Cabral Mello
 
-final public class Passeio extends Veiculo{
+final public class Passeio extends Veiculo implements Calc{
     private int qtdePassaggeiros;
     
     public Passeio(){
@@ -14,5 +14,8 @@ final public class Passeio extends Veiculo{
     public void setQtdePassaggeiros(int qtdePassaggeiros) {
         this.qtdePassaggeiros = qtdePassaggeiros;
     }
-           
+    
+    public void calcular(){
+        
+    }
 }

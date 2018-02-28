@@ -1,6 +1,6 @@
 // José Gustavo Cabral Mello
 
-final public class Carga extends Veiculo{
+final public class Carga extends Veiculo implements Calc{
     private int tara;
     private int cargaMax;
 
@@ -23,6 +23,10 @@ final public class Carga extends Veiculo{
 
     public void setCargaMax(int cargaMax) {
         this.cargaMax = cargaMax;
-    }      
+    } 
+    
+    public void calcular(){
+        
+    }
     
 }

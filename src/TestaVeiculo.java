@@ -36,7 +36,7 @@ public class TestaVeiculo {
 
             if (n == 9) {
                 System.out.println("9)_Sair do sistema\n\n");
-                break;
+                return;
             } else {
                 System.out.println("/n Deu ruim!!!");
             }
